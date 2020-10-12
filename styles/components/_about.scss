@@ -1,0 +1,14 @@
+.about-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	img {
+		width: 25%;
+		border-radius: 50%;
+	}
+
+	p {
+		width: 70%;
+	}
+}
