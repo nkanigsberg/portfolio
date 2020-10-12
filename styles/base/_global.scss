@@ -1,14 +1,22 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: $white;
 	color: $black;
 }
 
 .wrapper {
-	width: 85%;
+	width: 80%;
 	max-width: 1600px;
 	margin: 0 auto;
 }
 
 .highlight {
 	color: $primaryAccent;
+}
+
+section {
+	padding: 4rem 0;
 }

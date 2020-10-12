@@ -18,7 +18,7 @@
 </head>
 <body>
 
-	<header>
+	<header id="home">
 		<div class="wrapper">
 			<h1>Nathan <span class="highlight">Kanigsberg</span></h1>
 			<h2>Front-End Developer</h2>
@@ -27,53 +27,74 @@
 
 	<main>
 		<div class="wrapper">
-			<h3>Portfolio</h3>
-			<ul class="portfolio">
-				<li class="portfolio-item">
-					<div class="portfolio-item-left">
-						<h4 class="highlight">Waterworks</h3>
-						<p>Query-based drag-and-drop pipe fitting game where the player races against the clock to connect the pipes before water starts leaking</p>
-						<ul class="portfolio-item-icons">
-							<li><i class="devicon-github-plain"></i></li>
-							<li><i class="devicon-html5-plain"></i></li>
-							<li><i class="devicon-css3-plain"></i></li>
-							<li><i class="devicon-javascript-plain"></i></li>
-							<li><i class="devicon-jquery-plain"></i></li>
-							<li><i class="devicon-sass-original"></i></li>
-						</ul>
-						<a href="https://nkanigsberg.github.io/nathanKanigsbergProjectThree/" rel="noreferrer">live link</a>
-					</div>
-					<div class="portfolio-item-right">
-						<div class="image-container">
-							<img src="assets/waterworks.png" alt="Screenshot of Waterworks game project">
-						</div>
-					</div>
-				</li>
 
-				<li class="portfolio-item">
-					<div class="portfolio-item-left">
-						<div class="image-container">
-							<img src="assets/theWeather.png" alt="Screenshot of TheWeather weather app">
-						</div>
-					</div>
-					<div class="portfolio-item-right">
-						<h4 class="highlight">TheWeather</h3>
-							<p>React-based weather app using multiple RESTful APIs for data including maps, weather, and location, as well as
-								Firebase for storing user location settings</p>
+			<section id="about-section">
+				<h3>About Me</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate, dolor, veritatis eius enim illo totam incidunt perferendis quia sunt aliquam suscipit repellat rem eos? Enim sit incidunt libero distinctio voluptatum voluptatibus vitae, est animi quae blanditiis rerum aliquid explicabo a, officia magnam corrupti esse debitis consequuntur provident eos excepturi!</p>
+			</section>
+
+			<section id="portfolio-section">
+				<h3>Portfolio</h3>
+				<ul class="portfolio">
+					<li class="portfolio-item">
+						<div class="portfolio-item-left">
+							<h4 class="highlight">Waterworks</h3>
+							<p>Query-based drag-and-drop pipe fitting game where the player races against the clock to connect the pipes before water starts leaking</p>
 							<ul class="portfolio-item-icons">
 								<li><i class="devicon-github-plain"></i></li>
 								<li><i class="devicon-html5-plain"></i></li>
 								<li><i class="devicon-css3-plain"></i></li>
 								<li><i class="devicon-javascript-plain"></i></li>
-								<li><i class="devicon-react-original"></i></li>
-								<li><img src="assets/REST_API.png" alt="REST API"></li>
-					
+								<li><i class="devicon-jquery-plain"></i></li>
+								<li><i class="devicon-sass-original"></i></li>
 							</ul>
-							<a href="https://nkanigsberg.github.io/nathanKanigsbergProject5/" rel="noreferrer">live link</a>
-					</div>
+							<a href="https://nkanigsberg.github.io/nathanKanigsbergProjectThree/" rel="noreferrer">live link</a>
+						</div>
+						<div class="portfolio-item-right">
+							<div class="image-container">
+								<img src="assets/waterworks.png" alt="Screenshot of Waterworks game project">
+							</div>
+						</div>
+					</li>
+	
+					<li class="portfolio-item">
+						<div class="portfolio-item-left">
+							<div class="image-container">
+								<img src="assets/theWeather.png" alt="Screenshot of TheWeather weather app">
+							</div>
+						</div>
+						<div class="portfolio-item-right">
+							<h4 class="highlight">TheWeather</h3>
+								<p>React-based weather app using multiple RESTful APIs for data including maps, weather, and location, as well as
+									Firebase for storing user location settings</p>
+								<ul class="portfolio-item-icons">
+									<li><i class="devicon-github-plain"></i></li>
+									<li><i class="devicon-html5-plain"></i></li>
+									<li><i class="devicon-css3-plain"></i></li>
+									<li><i class="devicon-javascript-plain"></i></li>
+									<li><i class="devicon-react-original"></i></li>
+									<li><img src="assets/REST_API.png" alt="REST API"></li>
+						
+								</ul>
+								<a href="https://nkanigsberg.github.io/nathanKanigsbergProject5/" rel="noreferrer">live link</a>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<nav class="sidenav">
+			<ul>
+				<li>
+					<a href="#home"><span>Home</span></a>
+				</li>
+				<li>
+					<a href="#about-section"><span>About Me</span></a>
+				</li>
+				<li>
+					<a href="#portfolio-section"><span>Portfolio</span></a>
 				</li>
 			</ul>
-		</div>
+		</nav>
 	</main>
 
 	<footer>

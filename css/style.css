@@ -321,19 +321,27 @@ h4 {
   font-size: 3.4rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #FFFFFF;
   color: #272727;
 }
 
 .wrapper {
-  width: 85%;
+  width: 80%;
   max-width: 1600px;
   margin: 0 auto;
 }
 
 .highlight {
   color: #C2331A;
+}
+
+section {
+  padding: 4rem 0;
 }
 
 h3 {
@@ -345,6 +353,7 @@ h3 {
 }
 
 .portfolio-item {
+  background-color: #f8f8f8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,5 +418,43 @@ h3 {
 .portfolio-item-icons img {
   height: 4rem;
   width: 4rem;
+}
+
+.sidenav {
+  position: fixed;
+  right: 1rem;
+  top: 20rem;
+}
+
+.sidenav li {
+  padding: 0.3rem;
+}
+
+.sidenav a {
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid #272727;
+  border-radius: 50%;
+  position: relative;
+}
+
+.sidenav a span {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: -0.8rem;
+  white-space: nowrap;
+  background-color: #FFFFFF;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.sidenav a:hover, .sidenav a:focus {
+  background-color: #272727;
+}
+
+.sidenav a:hover span, .sidenav a:focus span {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
