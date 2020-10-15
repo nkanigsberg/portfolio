@@ -323,9 +323,19 @@ h4 {
   font-size: 3.4rem;
 }
 
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
 button {
   font-size: 2rem;
   letter-spacing: 0.1em;
+}
+
+.top-nav {
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 html {
@@ -338,7 +348,7 @@ body {
 }
 
 .wrapper {
-  width: 80%;
+  width: 85%;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -348,17 +358,7 @@ body {
 }
 
 section {
-  padding: 4rem 0;
-}
-
-a {
-  -webkit-transition: 0.1s color;
-  transition: 0.1s color;
-  text-decoration: underline;
-}
-
-a:hover, a:focus {
-  color: #C2331A;
+  padding: 6rem 0;
 }
 
 @font-face {
@@ -431,6 +431,60 @@ a:hover, a:focus {
   background-color: #C2331A;
 }
 
+header {
+  padding-top: 2rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-nav li {
+  padding: 0 2rem;
+}
+
+.top-nav a {
+  display: inline-block;
+  padding-bottom: 1.4rem;
+  text-align: center;
+  position: relative;
+}
+
+.top-nav a:hover::after, .top-nav a:focus::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #C2331A;
+}
+
+#about-section {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,6 +511,8 @@ a:hover, a:focus {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
 }
 
 .skills-item {
@@ -470,10 +526,15 @@ a:hover, a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2rem;
 }
 
 .skills i {
   font-size: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -485,7 +546,6 @@ h3 {
 }
 
 .portfolio-item {
-  background-color: #f8f8f8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,6 +702,16 @@ h3 {
 
 .contact-info {
   width: 45%;
+}
+
+.contact-info a {
+  -webkit-transition: 0.1s color;
+  transition: 0.1s color;
+  text-decoration: underline;
+}
+
+.contact-info a:hover, .contact-info a:focus {
+  color: #C2331A;
 }
 
 .contact-message {

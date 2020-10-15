@@ -8,8 +8,8 @@ body {
 }
 
 .wrapper {
-	width: 80%;
-	max-width: 1600px;
+	width: $wrapperWidth;
+	max-width: $wrapperMaxWidth;
 	margin: 0 auto;
 }
 
@@ -18,15 +18,5 @@ body {
 }
 
 section {
-	padding: 4rem 0;
-}
-
-a {
-	transition: 0.1s color;
-	text-decoration: underline;
-
-	&:hover,
-	&:focus {
-		color: $primaryAccent;
-	}
+	padding: 6rem 0;
 }

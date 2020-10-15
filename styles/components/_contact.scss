@@ -15,6 +15,16 @@
 
 	&-info {
 		width: 45%;
+
+		a {
+			transition: 0.1s color;
+			text-decoration: underline;
+
+			&:hover,
+			&:focus {
+				color: $primaryAccent;
+			}
+		}
 	}
 
 	display: grid;
