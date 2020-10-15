@@ -1,0 +1,15 @@
+.skip-links {
+	a {
+		position: absolute;
+		top: -10rem;
+
+		background-color: white;
+		padding: 1rem 2rem;
+
+		font-weight: bold;
+
+		&:focus {
+			top: 0;
+		}
+	}
+}
