@@ -437,6 +437,7 @@ h3 {
           align-items: center;
   text-align: center;
   padding: 2rem;
+  margin: 1rem 0;
   border-radius: 4rem;
 }
 
@@ -445,15 +446,31 @@ h3 {
   width: 48%;
 }
 
-.portfolio-item-left .portfolio-item-icons {
+.portfolio-item-right {
+  width: 48%;
+}
+
+.portfolio-item-icons {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.portfolio-item-right {
+.portfolio-item:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.portfolio-item:nth-child(even) .portfolio-item-left {
   text-align: left;
-  width: 48%;
+}
+
+.portfolio-item:nth-child(even) .portfolio-item-icons {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .portfolio-item .image-container {

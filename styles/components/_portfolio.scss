@@ -8,43 +8,44 @@ h3 {
 
 	&-item {
 		background-color: #f8f8f8;
-		// border: 2px solid #d3d3d3;
 
 		display: flex;
 		align-items: center;
 		text-align: center;
 
-		// width: 50%;
-
-		// background-color: #756654;
-
 		padding: 2rem;
+		margin: 1rem 0;
 
-		// border: 2px solid #b6aa97;
 		border-radius: 4rem;
 
 
 		&-left {
 			text-align: right;
-			// padding-right: 3rem;
-
 			width: 48%;
-
-			.portfolio-item-icons {
-				justify-content: flex-end;
-			}
-
-			// display: flex;
-
-			// align-items: flex-start;
 		}
 
 		&-right {
-			text-align: left;
-
 			width: 48%;
+		}
+
+		&-icons {
+			justify-content: flex-end;
+		}
+
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+
+			.portfolio-item {
+				&-left {
+					text-align: left;
+				}
+				&-icons {
+					justify-content: flex-start;
+				}
+			}
 
 		}
+
 
 		.image-container {
 				display: flex;
