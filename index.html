@@ -24,6 +24,7 @@
 </nav>
 
 <body>
+	<div class="accent-bar" aria-hidden="true"></div>
 
 	<!-- header -->
 	<header id="home">
@@ -286,31 +287,75 @@
 					<a href="#about-section"><span>About Me</span></a>
 				</li>
 				<li>
+					<a href="#skills-section"><span>Skills</span></a>
+				</li>
+				<li>
 					<a href="#portfolio-section"><span>Portfolio</span></a>
+				</li>
+				<li>
+					<a href="#contact-section"><span>Contact</span></a>
 				</li>
 			</ul>
 		</nav>
 	</main>
 
+	<!-- footer -->
 	<footer>
 		<div class="wrapper">
+			<!-- contact section -->
 			<section id="contact-section">
 				<h3>Contact Me</h3>
-				<form action="#">
-					<div>
-						<label for="input-name">Name</label>
-						<input type="text" id="input-name">
+
+				<div class="contact-container">
+					<!-- contact form -->
+					<form class="contact" action="#">
+						<div class="contact-name">
+							<label for="input-name">Name</label>
+							<input type="text" id="input-name" placeholder="Name" required>
+						</div>
+						<div class="contact-email">
+							<label for="input-email">Email</label>
+							<input type="email" id="input-email" placeholder="Email" required>
+						</div>
+						<div class="contact-message">
+							<label for="input-message">Message</label>
+							<textarea id="input-message" placeholder="Message" required></textarea>
+						</div>
+	
+						<button type="submit">Submit</button>
+					</form>
+	
+					<!-- contact info -->
+					<div class="contact-info">
+						<p>If you have any questions about me or my projects, or just want to talk about Star Trek and 3D printers, feel free to drop me a line!</p>
+						<a href="mailto:nathan@kanigsberg.com">nathan@kanigsberg.com</a>
+					
+						<!-- socials -->
+						<nav class="socials">
+							<ul>
+								<li>
+									<a href="https://www.linkedin.com/in/nathankanigsberg/" rel="noreferrer"><i class="fab fa-linkedin-in" title="LinkedIn" aria-label="LinkedIn"></i></a>
+								</li>
+								<li>
+									<a href="https://github.com/nkanigsberg" rel="noreferrer"><i class="fab fa-github" title="GitHub" aria-label="GitHub"></i></a>
+								</li>
+								<li>
+									<a href="https://twitter.com/nkanigsberg" rel="noreferrer"><i class="fab fa-twitter" title="Twitter" aria-label="Twitter"></i></a>
+								</li>
+								<li>
+									<a href="https://medium.com/@nathan_24059" rel="noreferrer"><i class="fab fa-medium-m" title="Medium" aria-label="Medium"></i></a>
+								</li>
+							</ul>
+
+						</nav>
 					</div>
-					<div>
-						<label for="input-email">Email</label>
-						<input type="email" id="input-email">
-					</div>
-					<div>
-						<label for="input-message">Message</label>
-						<textarea id="input-message" cols="30" rows="10"></textarea>
-					</div>
-				</form>
+				</div>
 			</section>
+		</div>
+
+		<!-- copyright -->
+		<div class="copyright accent-bar">
+			<p>Designed and developed by Nathan Kanigsberg 2020</p>
 		</div>
 	</footer>
 

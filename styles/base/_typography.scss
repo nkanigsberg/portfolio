@@ -5,7 +5,8 @@ h2 {
 
 h1,
 h3,
-h4 {
+h4,
+button {
 	font-family: $fontHeading;
 }
 
@@ -24,4 +25,9 @@ h3 {
 
 h4 {
 	font-size: 3.4rem;
+}
+
+button {
+	font-size: 2rem;
+	letter-spacing: 0.1em;
 }
