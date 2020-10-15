@@ -4,28 +4,29 @@ h3 {
 }
 
 .portfolio {
-	padding: 6rem 0;
+	// padding: 6rem 0;
 
 	&-item {
 		// background-color: #f8f8f8;
 
 		display: flex;
 		align-items: center;
-		text-align: center;
+		justify-content: space-between;
+		// text-align: center;
 
 		padding: 2rem;
-		margin: 1rem 0;
+		margin: 5rem 0;
 
 		border-radius: 4rem;
 
 
 		&-left {
 			text-align: right;
-			width: 48%;
+			width: 55%;
 		}
 
 		&-right {
-			width: 48%;
+			width: 40%;
 		}
 
 		&-icons {
@@ -43,17 +44,21 @@ h3 {
 					justify-content: flex-start;
 				}
 			}
+			.image-container {
+				justify-content: flex-end;
+			}
 		}
 
 
 		.image-container {
 				display: flex;
-				justify-content: center;
+				// justify-content: center;
 				align-items: center;
 
 				img {
 					// border: 5px solid $primaryAccent;
 					width: 75%;
+					max-width: 40rem;
 				}
 			}
 
