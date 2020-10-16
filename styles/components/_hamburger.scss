@@ -1,9 +1,7 @@
 #hamburger,
 label[for="hamburger"] {
 	position: absolute;
-	// top: 4rem;
 	top: calc(1rem + 1.5vw);
-	// right: 5rem;
 	right: calc(2rem + 2vw);
 
 	display: none;

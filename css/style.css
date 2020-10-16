@@ -796,6 +796,7 @@ header {
 }
 
 .sidenav {
+  display: none;
   position: fixed;
   right: 2rem;
   top: calc(50vh - 7.5rem);
