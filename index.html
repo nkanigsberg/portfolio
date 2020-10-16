@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
 	<!-- stylesheet -->
 	<link rel="stylesheet" href="dist/css/style.min.css">
+	<!-- reCAPTCHA -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <!-- skip-links -->
@@ -326,18 +328,19 @@
 
 				<div class="contact-container">
 					<!-- contact form -->
-					<form class="contact" action="#">
-						<div class="contact-name">
-							<label for="input-name">Name</label>
-							<input type="text" id="input-name" placeholder="Name" required>
+					<form class="contact" action="https://formspree.io/f/mleojayl" method="POST">
+						<div class="g-recaptcha" data-sitekey="6Lel5dcZAAAAAKj9ykypzYXrDkeQ5IR1QdELKAEv"></div>
+						<div class="contact-name float-label-container">
+							<input type="text" id="input-name" name="input-name" placeholder="Name" required>
+							<label class="float-label" for="input-name">Name</label>
 						</div>
-						<div class="contact-email">
-							<label for="input-email">Email</label>
-							<input type="email" id="input-email" placeholder="Email" required>
+						<div class="contact-email float-label-container">
+							<input type="email" id="input-email" name="input-email" placeholder="Email" required>
+							<label class="float-label" for="input-email">Email</label>
 						</div>
-						<div class="contact-message">
-							<label for="input-message">Message</label>
-							<textarea id="input-message" placeholder="Message" required></textarea>
+						<div class="contact-message float-label-container">
+							<textarea id="input-message" name="input-message" placeholder="Message" required></textarea>
+							<label class="float-label" for="input-message">Message</label>
 						</div>
 	
 						<button type="submit">Submit</button>

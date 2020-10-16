@@ -1,0 +1,51 @@
+.float-label {
+	&-container {
+		position: relative;
+		overflow: hidden;
+	}
+
+	position: absolute;
+	left: 0;
+
+	bottom: 100%;
+	width: 100%;
+
+	padding: 1rem;
+
+	background-color: $primaryAccent;
+	color: $white;
+
+	text-transform: uppercase;
+
+	opacity: 0;
+
+	transition: 0.2s;
+}
+
+.float-label-container {
+	input,
+	textarea {
+		padding: 1.5rem;
+
+		transition: 0.2s padding;
+		&:focus {
+			padding: 0.8rem 1.5rem 2.2rem;
+
+			&::placeholder {
+				opacity: 0;
+			}
+
+			& + label {
+				z-index: 10;
+				bottom: 0;
+	
+				font-size: 1.2rem;
+
+				padding: 0.2rem 0.5rem;
+
+				opacity: 1;
+
+			}
+		}
+	}
+}

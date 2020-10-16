@@ -9,13 +9,51 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		padding-top: 4rem;
 	}
 
 	width: 50%;
 
 	&-info {
 		width: 45%;
+	}
 
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+
+	gap: 2rem;
+
+	&-name,
+	&-email {
+		grid-column: span 2;
+	}
+
+	&-message {
+		grid-row: span 3;
+		grid-column: span 4;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		height: 100%;
+
+		padding: 1rem;
+
+		border: 2px solid $lightGrey;
+
+		&:focus {
+			border: 2px solid $primaryAccent;
+		}
+	}
+
+	button {
+		grid-column: 2 / 4;
+	}
+
+	&-info {
 		a {
 			transition: 0.1s color;
 			text-decoration: underline;
@@ -25,26 +63,14 @@
 				color: $primaryAccent;
 			}
 		}
-	}
 
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(5, 1fr);
+		p {
+			padding-bottom: 1rem;
+		}
 
-	gap: 2rem;
-
-	&-message {
-		grid-row: span 3;
-		grid-column: span 2;
-	}
-
-	input,
-	textarea {
-		width: 100%;
-		height: 100%;
-
-		&:focus {
-			border: 2px solid $primaryAccent;
+		a {
+			display: inline-block;
+			padding-bottom: 1rem;
 		}
 	}
 }
