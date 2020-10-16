@@ -1,32 +1,30 @@
-
-h3 {
-	text-align: center;
+#portfolio-section {
+	background-color: $lightGrey;
 }
 
 .portfolio {
-	// padding: 6rem 0;
 
 	&-item {
-		// background-color: #f8f8f8;
+		background-color: $white;
 
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		// text-align: center;
 
-		padding: 2rem;
-		margin: 5rem 0;
+		padding: 6rem 4rem;
+		margin: 8rem 0;
 
 		border-radius: 4rem;
 
 
 		&-left {
 			text-align: right;
-			width: 55%;
+			width: 50%;
 		}
 
 		&-right {
-			width: 40%;
+			width: 43%;
 		}
 
 		&-icons {
@@ -57,8 +55,8 @@ h3 {
 
 				img {
 					// border: 5px solid $primaryAccent;
-					width: 75%;
-					max-width: 40rem;
+					// width: 75%;
+					max-width: 45rem;
 				}
 			}
 

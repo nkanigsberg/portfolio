@@ -47,6 +47,11 @@ img {
 address {
   font-style: normal;
 }
+// strip default input and textarea font
+input,
+textarea {
+	font-family: inherit;
+}
 // set root font size to 10px for simple rem conversion  
 html {
   font-size: 62.5%;

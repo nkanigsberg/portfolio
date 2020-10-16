@@ -285,6 +285,11 @@ address {
   font-style: normal;
 }
 
+input,
+textarea {
+  font-family: inherit;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -325,6 +330,9 @@ h4 {
 
 body {
   font-size: 1.8rem;
+}
+
+p {
   line-height: 1.5;
 }
 
@@ -358,7 +366,11 @@ body {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 20rem 0;
+}
+
+h3 {
+  text-align: center;
 }
 
 @font-face {
@@ -485,6 +497,11 @@ header {
           justify-content: center;
 }
 
+#about-section h3 {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
 .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,7 +519,8 @@ header {
   border-radius: 50%;
 }
 
-.about-container p {
+.about-text {
+  text-align: left;
   width: 70%;
 }
 
@@ -513,6 +531,7 @@ header {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
+  padding-top: 6rem;
 }
 
 .skills-item {
@@ -537,11 +556,12 @@ header {
   margin-bottom: 1rem;
 }
 
-h3 {
-  text-align: center;
+#portfolio-section {
+  background-color: #EFEFEF;
 }
 
 .portfolio-item {
+  background-color: #fbfbfb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,18 +571,18 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem;
-  margin: 5rem 0;
+  padding: 6rem 4rem;
+  margin: 8rem 0;
   border-radius: 4rem;
 }
 
 .portfolio-item-left {
   text-align: right;
-  width: 55%;
+  width: 50%;
 }
 
 .portfolio-item-right {
-  width: 40%;
+  width: 43%;
 }
 
 .portfolio-item-icons {
@@ -604,8 +624,7 @@ h3 {
 }
 
 .portfolio-item .image-container img {
-  width: 75%;
-  max-width: 40rem;
+  max-width: 45rem;
 }
 
 .portfolio-item a {

@@ -4,19 +4,30 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	
+	h3 {
+		text-align: left;
+		padding-bottom: 2rem;
+	}
 }
 
-.about-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.about {
+	&-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-	img {
-		width: 25%;
-		border-radius: 50%;
+		img {
+			width: 25%;
+			border-radius: 50%;
+		}
+
 	}
 
-	p {
+	&-text {
+		text-align: left;
 		width: 70%;
 	}
+
 }
