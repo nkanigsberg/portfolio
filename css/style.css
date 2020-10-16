@@ -313,11 +313,13 @@ button {
 
 h1 {
   font-size: calc(3.5rem + 3vw);
+  line-height: 1;
+  padding-bottom: calc(0.2rem + 0.2vw);
 }
 
 h2 {
   text-transform: uppercase;
-  font-size: calc(2rem + 1.5vw);
+  font-size: calc(2rem + 1.3vw);
 }
 
 h3 {
@@ -629,6 +631,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 2rem;
+  -webkit-transition: 0.15s background-color;
+  transition: 0.15s background-color;
+}
+
+.portfolio-item .image-container:hover, .portfolio-item .image-container:focus {
+  background-color: #EFEFEF;
 }
 
 .portfolio-item .image-container img {
