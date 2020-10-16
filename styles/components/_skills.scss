@@ -1,5 +1,9 @@
 #skills-section {
 	padding-top: 0;
+
+	@include breakpoint('medium') {
+		padding-top: 10rem;
+	}
 }
 
 .skills {
@@ -18,7 +22,7 @@
 		text-align: center;
 
 		// padding: 2rem;
-		padding: calc(1rem + 1vw);
+		padding: calc(0.5rem + 1vw);
 	}
 
 	i {
@@ -30,4 +34,8 @@
 		margin-bottom: calc(0.8rem + 0.2vw);
 	}
 
+	@include breakpoint('small') {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+	}
 }

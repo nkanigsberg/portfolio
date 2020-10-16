@@ -1,6 +1,8 @@
 // wrapper size
 $wrapperWidth: 85%;
-$wrapperMaxWidth: 1600px;
+$wrapperMaxWidth: 1400px;
+
+$wrapperMobileWidth: 90%;
 
 // font stacks
 $fontHeading: 'Bebas Neue', sans-serif;
@@ -15,3 +17,10 @@ $lightGrey: #EFEFEF;
 
 // pseudo-states
 $primaryHover: #f8e6e2;
+
+// breakpoints
+$breakpoints: (
+	'small': 480px,
+	'medium': 768px,
+	'large': 1024px
+) !default;

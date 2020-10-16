@@ -1,0 +1,14 @@
+// breakpoints
+@mixin breakpoint($breakpoint) {
+	// if key exists
+	@if map-has-key($breakpoints, $breakpoint) {
+		// print media query based on value
+		@media (max-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	} 
+	@else {
+		@warn "No breakpoint at `#{$breakpoint}`. "
+			+ "List of breakpoints: #{map-keys($breakpoints)}.";
+	}
+}

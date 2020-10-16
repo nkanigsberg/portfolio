@@ -11,6 +11,10 @@ body {
 	width: $wrapperWidth;
 	max-width: $wrapperMaxWidth;
 	margin: 0 auto;
+
+	@include breakpoint('medium') {
+		width: $wrapperMobileWidth;
+	}
 }
 
 .highlight {
@@ -19,7 +23,7 @@ body {
 
 section {
 	// padding: 20rem 0;
-	padding: calc(5rem + 10vh) 0;
+	padding: calc(2rem + 12vh) 0;
 }
 
 h3 {

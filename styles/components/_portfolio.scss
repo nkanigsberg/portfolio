@@ -47,7 +47,7 @@
 			.image-container {
 				justify-content: flex-end;
 			}
-		}
+		}		
 
 
 		.image-container {
@@ -56,16 +56,22 @@
 				align-items: center;
 
 				// border: 4px solid $white;
-				border-radius: 2rem;
+				
 
-				transition: 0.15s background-color;
+				a {
+					padding: 2rem 0 1rem;
+					border-radius: 2rem;
 
-				&:hover,
-				&:focus {
-					background-color: $lightGrey;
-					// border: 4px solid $primaryAccent;
-					
+					transition: 0.15s background-color;
+
+					&:hover,
+					&:focus {
+						background-color: $lightGrey;
+						// border: 4px solid $primaryAccent;
+						
+					}
 				}
+			
 
 				img {
 					// border: 5px solid $primaryAccent;
@@ -106,5 +112,27 @@
 			}
 		}
 
+
+		@include breakpoint('medium') {
+			&, &:nth-child(even) {
+				flex-direction: column-reverse;
+
+				.portfolio-item {
+					&-left,
+					&-right {
+						width: 100%;
+						text-align: center;
+					}
+
+					&-icons {
+						justify-content: center;
+					}
+				}
+
+				.image-container {
+					justify-content: center;
+				}
+			}
+		}
 	}
 }

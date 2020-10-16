@@ -87,6 +87,22 @@
 			padding-bottom: calc(0.5rem + 0.5vw);
 		}
 	}
+
+	@include breakpoint('medium') {
+		&-container {
+			flex-direction: column;
+		}
+
+		width: 100%;
+
+		&-info {
+			width: 100%;
+			padding-top: 6rem;
+
+			text-align: center;
+			
+		}
+	}
 }
 
 .socials {
@@ -104,5 +120,11 @@
 
 	li:first-child a {
 		padding-left: 0;
+	}
+
+	@include breakpoint('medium') {
+		ul {
+			justify-content: center;
+		}
 	}
 }
