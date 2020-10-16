@@ -11,24 +11,29 @@ button {
 }
 
 h1 {
-	font-size: 7rem;
+	// font-size: 7rem;
+	font-size: calc(3.5rem + 3vw);
 }
 
 h2 {
 	text-transform: uppercase;
-	font-size: 3.5rem;
+	// font-size: 3.5rem;
+	font-size: calc(2rem + 1.5vw);
 }
 
 h3 {
-	font-size: 4rem;
+	// font-size: 4rem;
+	font-size: calc(2.5rem + 1.5vw);
 }
 
 h4 {
-	font-size: 4rem;
+	// font-size: 4rem;
+	font-size: calc(2.5rem + 1.5vw);
 }
 
 body {
-	font-size: 1.8rem;
+	// font-size: 1.8rem;
+	font-size: calc(1.4rem + 0.4vw);
 }
 
 p {
@@ -36,11 +41,13 @@ p {
 }
 
 button {
-	font-size: 2rem;
+	// font-size: 2rem;
+	font-size: calc(1.5rem + 0.5vw);
 	letter-spacing: 0.1em;
 }
 
 .top-nav {
-	font-size: 2rem;
+	// font-size: 2rem;
+	font-size: calc(1.5rem + 0.5vw);
 	text-transform: uppercase;
 }

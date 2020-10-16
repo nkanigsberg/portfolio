@@ -1,6 +1,11 @@
 .copyright {
 	color: white;
 	text-align: center;
-	height: 3rem;
+	// height: 3rem;
+	height: calc(1.5rem + 1.5vw);
 	overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

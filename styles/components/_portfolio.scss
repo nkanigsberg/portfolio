@@ -12,8 +12,10 @@
 		justify-content: space-between;
 		// text-align: center;
 
-		padding: 6rem 4rem;
-		margin: 8rem 0;
+		// padding: 6rem 4rem;
+		padding: calc(3rem + 2vw) calc(2rem + 1.5vw);
+		// margin: 8rem 0;
+		margin: calc(4rem + 4vw) 0;
 
 		border-radius: 4rem;
 
@@ -64,20 +66,31 @@
 		a {
 			text-decoration: underline;
 			display: inline-block;
-			margin-top: 1rem;
+			// margin-top: 1rem;
+			margin-top: calc(0.5rem + 0.5vw);
+
+			&:hover,
+			&:focus {
+				color: $primaryAccent;
+			}
 		}
 
 		&-icons {
 			display: flex;
 			// justify-content: flex-end;
-			font-size: 4rem;
+			// font-size: 4rem;
+			font-size: calc(2rem + 1.5vw);
 
-			padding-top: 1rem;
+			// padding-top: 1rem;
+			padding-top: calc(0.5rem + 0.5vw);
 
 			li {
-				padding-left: 0.5rem;
-				width: 4.5rem;
-				height: 4rem;
+				// padding-left: 0.5rem;
+				padding-left: calc(0.25rem + 0.2vw);
+				// width: 4.5rem;
+				width: calc(2.25rem + 2vw);
+				// height: 4rem;
+				height: calc(2rem + 1.5vw);
 			}
 		}
 

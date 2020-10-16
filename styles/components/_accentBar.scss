@@ -1,5 +1,6 @@
 .accent-bar {
 	width: 100vw;
-	height: 2rem;
+	// height: 2rem;
+	height: calc(1rem + 0.5vw);
 	background-color: $primaryAccent;
 }

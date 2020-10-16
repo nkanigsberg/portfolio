@@ -312,24 +312,24 @@ button {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: calc(3.5rem + 3vw);
 }
 
 h2 {
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: calc(2rem + 1.5vw);
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: calc(2.5rem + 1.5vw);
 }
 
 h4 {
-  font-size: 4rem;
+  font-size: calc(2.5rem + 1.5vw);
 }
 
 body {
-  font-size: 1.8rem;
+  font-size: calc(1.4rem + 0.4vw);
 }
 
 p {
@@ -337,12 +337,12 @@ p {
 }
 
 button {
-  font-size: 2rem;
+  font-size: calc(1.5rem + 0.5vw);
   letter-spacing: 0.1em;
 }
 
 .top-nav {
-  font-size: 2rem;
+  font-size: calc(1.5rem + 0.5vw);
   text-transform: uppercase;
 }
 
@@ -439,12 +439,12 @@ h3 {
 
 .accent-bar {
   width: 100vw;
-  height: 2rem;
+  height: calc(1rem + 0.5vw);
   background-color: #C2331A;
 }
 
 header {
-  padding-top: 2rem;
+  padding-top: calc(1rem + 1vw);
 }
 
 .header {
@@ -463,12 +463,12 @@ header {
 }
 
 .top-nav li {
-  padding: 0 2rem;
+  padding: 0 1.5vw;
 }
 
 .top-nav a {
   display: inline-block;
-  padding-bottom: 1.4rem;
+  padding-bottom: calc(1rem + 0.4vw);
   text-align: center;
   position: relative;
 }
@@ -479,12 +479,13 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 0.5rem;
+  height: calc(0.3rem + 0.2vw);
   background-color: #C2331A;
 }
 
 #about-section {
   height: 80vh;
+  min-height: calc(30rem + 10vw);
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,7 +501,7 @@ header {
 
 #about-section h3 {
   text-align: left;
-  padding-bottom: 2rem;
+  padding-bottom: calc(0.5rem + 0.5vw);
 }
 
 .about-container {
@@ -513,6 +514,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: calc(2rem + 2vw);
 }
 
 .about-container img {
@@ -536,7 +538,7 @@ header {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  padding-top: 6rem;
+  padding-top: calc(4rem + 2vw);
 }
 
 .skills-item {
@@ -550,15 +552,16 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
+  text-align: center;
+  padding: calc(1rem + 1vw);
 }
 
 .skills i {
-  font-size: 5rem;
+  font-size: calc(3rem + 2vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: calc(0.8rem + 0.2vw);
 }
 
 #portfolio-section {
@@ -576,8 +579,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 6rem 4rem;
-  margin: 8rem 0;
+  padding: calc(3rem + 2vw) calc(2rem + 1.5vw);
+  margin: calc(4rem + 4vw) 0;
   border-radius: 4rem;
 }
 
@@ -635,21 +638,25 @@ header {
 .portfolio-item a {
   text-decoration: underline;
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: calc(0.5rem + 0.5vw);
+}
+
+.portfolio-item a:hover, .portfolio-item a:focus {
+  color: #C2331A;
 }
 
 .portfolio-item-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 4rem;
-  padding-top: 1rem;
+  font-size: calc(2rem + 1.5vw);
+  padding-top: calc(0.5rem + 0.5vw);
 }
 
 .portfolio-item-icons li {
-  padding-left: 0.5rem;
-  width: 4.5rem;
-  height: 4rem;
+  padding-left: calc(0.25rem + 0.2vw);
+  width: calc(2.25rem + 2vw);
+  height: calc(2rem + 1.5vw);
 }
 
 .sidenav {
@@ -725,7 +732,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 4rem;
+  padding-top: calc(2rem + 2vw);
 }
 
 .contact-info {
@@ -752,7 +759,7 @@ header {
 .contact textarea {
   width: 100%;
   height: 100%;
-  padding: 1rem;
+  padding: calc(0.5rem + 0.5vw);
   border: 2px solid #EFEFEF;
 }
 
@@ -778,16 +785,16 @@ header {
 }
 
 .contact-info p {
-  padding-bottom: 1rem;
+  padding-bottom: calc(0.5rem + 0.5vw);
 }
 
 .contact-info a {
   display: inline-block;
-  padding-bottom: 1rem;
+  padding-bottom: calc(0.5rem + 0.5vw);
 }
 
 .socials {
-  font-size: 3rem;
+  font-size: calc(1.5rem + 1.5vw);
 }
 
 .socials ul {
@@ -797,7 +804,7 @@ header {
 }
 
 .socials a {
-  padding: 1rem;
+  padding: calc(0.5rem + 0.5vw);
 }
 
 .socials li:first-child a {
@@ -819,8 +826,17 @@ button:hover, button:focus {
 .copyright {
   color: white;
   text-align: center;
-  height: 3rem;
+  height: calc(1.5rem + 1.5vw);
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .float-label {
@@ -828,7 +844,7 @@ button:hover, button:focus {
   left: 0;
   bottom: 100%;
   width: 100%;
-  padding: 1rem;
+  padding: calc(0.5rem + 0.5vw);
   background-color: #C2331A;
   color: #fbfbfb;
   text-transform: uppercase;
@@ -844,14 +860,14 @@ button:hover, button:focus {
 
 .float-label-container input,
 .float-label-container textarea {
-  padding: 1.5rem;
+  padding: calc(1rem + 0.5vw);
   -webkit-transition: 0.2s padding;
   transition: 0.2s padding;
 }
 
 .float-label-container input:focus,
 .float-label-container textarea:focus {
-  padding: 0.8rem 1.5rem 2.2rem;
+  padding: calc(0.6rem + 0.2vw) calc(1rem + 0.5vw) calc(1.5rem + 0.7vw);
 }
 
 .float-label-container input:focus::-webkit-input-placeholder,
@@ -878,8 +894,8 @@ button:hover, button:focus {
 .float-label-container textarea:focus + label {
   z-index: 10;
   bottom: 0;
-  font-size: 1.2rem;
-  padding: 0.2rem 0.5rem;
+  font-size: calc(1rem + 0.2vw);
+  padding: calc(0.1rem + 0.1vw) calc(0.3rem + 0.2vw);
   opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

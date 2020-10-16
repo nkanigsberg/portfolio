@@ -1,5 +1,7 @@
 #about-section {
 	height: 80vh;
+	// min-height: 40rem;
+	min-height: calc(30rem + 10vw);
 
 	padding: 0;
 
@@ -10,7 +12,8 @@
 	
 	h3 {
 		text-align: left;
-		padding-bottom: 2rem;
+		// padding-bottom: 2rem;
+		padding-bottom: calc(0.5rem + 0.5vw);
 	}
 }
 
@@ -19,6 +22,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		// padding-right: 8rem;
+		padding-right: calc(2rem + 2vw);
 
 		img {
 			width: 25%;
