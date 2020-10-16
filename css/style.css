@@ -654,8 +654,8 @@ header {
 
 .sidenav {
   position: fixed;
-  right: 1rem;
-  top: 20rem;
+  right: 2rem;
+  top: calc(50vh - 7.5rem);
 }
 
 .sidenav li {
@@ -664,8 +664,8 @@ header {
 
 .sidenav a {
   display: inline-block;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
   border: 1px solid #272727;
   border-radius: 50%;
   position: relative;
