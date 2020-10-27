@@ -609,6 +609,16 @@ header {
   width: 70%;
 }
 
+.about-text .resume {
+  display: inline-block;
+  padding-top: calc(0.8rem + 0.5vw);
+  font-size: calc(1.6rem + 0.4vw);
+}
+
+.about-text .resume:hover, .about-text .resume:focus {
+  color: #C2331A;
+}
+
 @media (max-width: 768px) {
   .about-text {
     width: 100%;

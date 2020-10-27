@@ -51,6 +51,26 @@
 		text-align: left;
 		width: 70%;
 
+		.resume {
+			display: inline-block;
+			// padding-top: 1.5rem;
+			padding-top: calc(0.8rem + 0.5vw);
+			// text-decoration: underline;
+
+			// background-color: white;
+
+			font-size: calc(1.6rem + 0.4vw);
+
+			span {
+				// text-decoration: underline;
+			}
+
+			&:hover,
+			&:focus {
+				color: $primaryAccent;
+			}
+		}
+
 		@include breakpoint('medium') {
 			width: 100%;
 		}
