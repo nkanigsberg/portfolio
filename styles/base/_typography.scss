@@ -14,11 +14,15 @@ h1 {
 	font-size: calc(3.5rem + 3vw);
 	line-height: 1;
 	padding-bottom: calc(0.2rem + 0.2vw);
+
+	transition: 0.25s font-size;
 }
 
 h2 {
 	text-transform: uppercase;
-	font-size: calc(2rem + 1.3vw);
+	font-size: calc(1.6rem + 1.3vw);
+
+	transition: 0.25s font-size;
 }
 
 h3 {
@@ -43,6 +47,6 @@ button {
 }
 
 .top-nav {
-	font-size: calc(1.5rem + 0.5vw);
+	font-size: calc(1.5rem + 0.7vw);
 	text-transform: uppercase;
 }

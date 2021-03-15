@@ -1,6 +1,6 @@
 // wrapper size
 $wrapperWidth: 85%;
-$wrapperMaxWidth: 1400px;
+$wrapperMaxWidth: 1300px;
 
 $wrapperMobileWidth: 90%;
 
@@ -17,10 +17,3 @@ $lightGrey: #EFEFEF;
 
 // pseudo-states
 $primaryHover: #f8e6e2;
-
-// breakpoints
-$breakpoints: (
-	'small': 480px,
-	'medium': 768px,
-	'large': 1024px
-) !default;

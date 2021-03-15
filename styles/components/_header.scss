@@ -1,43 +1,203 @@
 header {
-	padding-top: calc(1rem + 1vw);
-}
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
 
-.header {
-	display: flex;
-	justify-content: space-between;
-}
-
-.top-nav {
-	ul {
-		display: flex;
-	}
-
-	li {
-		padding: 0 1.5vw;
-	}
-
-	a {
-		display: inline-block;
-		padding-bottom: calc(0.8rem + 0.4vw);
-
-		text-align: center;
-
+	// transition: 0.2s;
+	
+	.accent-bar {
 		position: relative;
+		z-index: 450;
+	}
 
-		&:hover,
-		&:focus {
+	.main-heading {
+		padding-right: 2rem;
+	
+		align-self: flex-start;
+
+		margin-top: calc(0.8rem + 0.4vw);
+
+		@include breakpoint('small') {
+			width: 75%;
+		}
+	}
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		align-items: center;
+
+		margin-top: calc(0.5rem + 0.5vw);
+	}
+
+
+	.top-nav {
+		display: flex;
+		// height: 10rem;
+		// margin-top: calc(-3rem - 3vw);
+
+		transition: 0.25s height;
+
+		@include breakpoint('medium') {
+			position: relative;
+
+			flex-direction: column;
+			align-items: flex-end;
+
+			overflow: hidden;
+
+
+			// blocker to hide nav menu when it slides up/down
 			&::after {
 				content: '';
 				position: absolute;
-				bottom: 0;
-				left: 0;
+				z-index: 410;
 
+				display: inline-block;
 				width: 100%;
-				height: calc(0.3rem + 0.2vw);
+				height: 3rem;
+				background-color: $white;
+			}
+		}
 
-				background-color: $primaryAccent;
+		button {
+			position: relative;
+			z-index: 420;
+
+			display: none;
+			width: fit-content;
+
+			border: none;
+
+			transition: none;
+
+			font-size: calc(1.5rem + 1.5vw);
+
+			padding: 1rem;
+
+			&:hover,
+			&:focus {
+				background-color: initial;
+				color: $primaryAccent;
+			}
+
+			@include breakpoint('medium') {
+				display: initial;
+			}
+		};
+		
+		ul {
+			display: flex;
+
+			@include breakpoint('medium') {
+				flex-direction: column;
+
+				position: relative;
+				top: 0;
+				z-index: 400;
+
+				max-height: calc(15rem + 8vw);
+
+				transition: 0.25s top, 0.15s opacity, 0.25s height;
+				
+				&.hidden {
+					// display: none;
+					top: -100%;
+					opacity: 0;
+					// height: 0;
+				
+					&.floating {
+						height: 0;
+					}
+				}
+
+
+			}
+		}
+	
+		li {
+			padding: 0.25rem calc(0.5rem + 0.8vw);
+		}
+	
+		a {
+			display: inline-block;
+			padding: calc(0.8rem + 0.4vw) 0;
+	
+			text-align: center;
+	
+			position: relative;
+
+			@include breakpoint('medium') {
+				font-size: calc(1.6rem + 0.8vw);
+			}
+
+			&:hover,
+			&:focus {
+				&::after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+	
+					width: 100%;
+					height: calc(0.3rem + 0.2vw);
+	
+					background-color: $primaryAccent;
+				}
 			}
 		}
 	}
 
+
+	// floating header (on scroll)
+	&.floating {
+		background-color: $white;
+
+		box-shadow: 0 0 10px #00000044;
+
+		padding-bottom: 2rem;
+
+		// border-bottom: 3px solid $primaryAccent;
+
+		h1 {
+			font-size: calc(2.2rem + 2vw);
+		}
+
+		h2 {
+			font-size: calc(1.2rem + 1vw);
+		}
+
+		.accent-bar {
+			height: calc(0.5rem + 0.5vw);
+		}
+
+		.wrapper {
+			// margin-top: 1rem;
+
+			// display: flex;
+			align-items: center;
+		}
+
+		.top-nav {
+			height: fit-content;
+
+			// margin-top: 0;
+
+			@include breakpoint('medium') {
+			top: calc(0.5rem + 0.5vw);
+		}
+		}
+	}
 }
+
+.header-spacer {
+	height: 20vh;
+	min-height: 20rem;
+}
+
+// // transitions while switching to floating header
+// .scrolling {
+// 	transition: 0.25s font-size;
+// }

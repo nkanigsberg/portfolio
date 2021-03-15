@@ -1,57 +1,66 @@
-#hamburger,
-label[for="hamburger"] {
-	position: absolute;
-	top: calc(1rem + 1.5vw);
-	right: calc(2rem + 2vw);
+// #hamburger,
+// label[for="hamburger"] {
+// 	position: absolute;
+// 	top: calc(0.5rem + 1vw);
+// 	right: calc(2rem + 2vw);
 
-	display: none;
-}
+// 	display: none;
+// }
 
-.top-nav {
-	// switch to hamburger menu at medium breakpoint
-	@include breakpoint('medium') {
-		ul {
-			flex-direction: column;
-			position: relative;
-			right: -150%;
+// .top-nav {
+// 	// switch to hamburger menu at medium breakpoint
+// 	@include breakpoint('medium') {
+// 		// background-color: $white;
+		
+// 		// position: fixed;
+// 		right: 0;
+// 		top: calc(1rem + 0.5vw);
 
-			padding-top: 5rem;
+// 		ul {
+// 			background-color: $white;
 
-			transition: 0.5s right;
-		}
+// 			flex-direction: column;
+// 			position: relative;
+// 			top: -150%;
 
-		li {
-			margin-bottom: 1rem;
-		}
+// 			padding: 2rem;
+// 			padding-top: 8rem;
 
-		#hamburger,
-		label[for="hamburger"] {
-			display: initial;
-		}
-	}
-}
+// 			transition: 0.5s top;
+// 		}
 
-#hamburger {
-	opacity: 0;
+// 		li {
+// 			margin-bottom: 1rem;
+// 		}
+
+// 		#hamburger,
+// 		label[for="hamburger"] {
+// 			display: initial;
+// 		}
+// 	}
+// }
+
+// #hamburger {
+// 	opacity: 0;
 	
 
-	&:checked {
-		& ~ ul {
-			right: 0;
-		}
-	}
-}
+// 	&:checked {
+// 		& ~ ul {
+// 			top: 0;
+// 		}
+// 	}
+// }
 
-label[for="hamburger"] {
-	cursor: pointer;
-	z-index: 100;
+// label[for="hamburger"] {
+// 	cursor: pointer;
+// 	z-index: 100;
 
-	padding: 1rem;
+// 	padding: 1rem;
 
-	font-size: 2.5rem;
-}
+// 	font-size: 2.5rem;
+// }
 
-label[for="hamburger"]:hover,
-#hamburger:focus + label[for="hamburger"] {
-	color: $primaryAccent;
-}
+// label[for="hamburger"]:hover,
+// #hamburger:focus + label[for="hamburger"] {
+// 	color: $primaryAccent;
+// }
