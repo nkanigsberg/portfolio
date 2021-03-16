@@ -2,14 +2,22 @@
 	color: white;
 	text-align: center;
 
-	height: calc(1.5rem + 1.5vw);
+	// height: calc(1.5rem + 1.5vw);
 	overflow: hidden;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	@include breakpoint('small') {
-		height: 4.5rem;
+	font-size: calc(1rem + 0.2vw);
+
+	height: fit-content;
+
+	p {
+		padding: calc(0.2rem + 0.1vw) 0;
 	}
+
+	// @include breakpoint('small') {
+	// 	height: 4.5rem;
+	// }
 }

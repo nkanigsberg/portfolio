@@ -1,4 +1,14 @@
 // breakpoints
+$breakpoints: (
+  'x-small': 360px,
+	'small': 480px,
+  'sm-medium': 600px,
+	'medium': 768px,
+	'large': 1024px,
+  'x-large': 1440px,
+) !default;
+
+// breakpoints
 @mixin breakpoint($breakpoint) {
 	// if key exists
 	@if map-has-key($breakpoints, $breakpoint) {

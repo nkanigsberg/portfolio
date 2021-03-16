@@ -1,6 +1,7 @@
 .skip-links {
 	a {
 		position: absolute;
+		z-index: 1000;
 		top: -10rem;
 
 		background-color: white;

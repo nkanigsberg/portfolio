@@ -16,7 +16,13 @@ body {
 	@include breakpoint('medium') {
 		width: $wrapperMobileWidth;
 	}
+
+	&-wide {
+		width: 90%;
+		max-width: 1800px;
+	}
 }
+
 
 .highlight {
 	color: $primaryAccent;
