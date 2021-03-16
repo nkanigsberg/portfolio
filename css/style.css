@@ -460,6 +460,8 @@ h3 {
   width: 100%;
   height: calc(1rem + 0.5vw);
   background-color: #C2331A;
+  -webkit-transition: 0.25s height;
+  transition: 0.25s height;
 }
 
 header {
@@ -467,15 +469,17 @@ header {
   z-index: 100;
   top: 0;
   width: 100%;
+  -webkit-transition: 0.2s height;
+  transition: 0.2s height;
 }
 
 header .accent-bar {
-  position: relative;
+  position: absolute;
   z-index: 450;
 }
 
 header .main-heading {
-  padding-right: 2rem;
+  padding-right: 2vw;
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: calc(0.8rem + 0.4vw);
@@ -497,7 +501,9 @@ header .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: calc(0.5rem + 0.5vw);
+  padding-top: calc(1.25rem + 0.5vw);
+  -webkit-transition: 0.2s padding;
+  transition: 0.2s padding;
 }
 
 header .top-nav {
@@ -518,6 +524,10 @@ header .top-nav {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    height: calc(20rem + 10vw);
     overflow: hidden;
   }
   header .top-nav::after {
@@ -543,6 +553,7 @@ header .top-nav button {
   transition: none;
   font-size: calc(1.5rem + 1.5vw);
   padding: 1rem;
+  margin-top: 1.5rem;
 }
 
 header .top-nav button:hover, header .top-nav button:focus {
@@ -571,13 +582,13 @@ header .top-nav ul {
     position: relative;
     top: 0;
     z-index: 400;
-    max-height: calc(15rem + 8vw);
+    height: calc(15rem + 8vw);
     -webkit-transition: 0.25s top, 0.15s opacity, 0.25s height;
     transition: 0.25s top, 0.15s opacity, 0.25s height;
   }
   header .top-nav ul.hidden {
-    top: -100%;
     opacity: 0;
+    height: 0;
   }
   header .top-nav ul.hidden.floating {
     height: 0;
@@ -615,36 +626,30 @@ header.floating {
   background-color: #fbfbfb;
   -webkit-box-shadow: 0 0 10px #00000044;
           box-shadow: 0 0 10px #00000044;
-  padding-bottom: 2rem;
-}
-
-header.floating h1 {
-  font-size: calc(2.2rem + 2vw);
-}
-
-header.floating h2 {
-  font-size: calc(1.2rem + 1vw);
-}
-
-header.floating .accent-bar {
-  height: calc(0.5rem + 0.5vw);
+  padding-bottom: calc(0.8rem + 0.6vw);
 }
 
 header.floating .wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: calc(1rem + 0.1vw);
 }
 
-header.floating .top-nav {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+header.floating h1 {
+  font-size: calc(2.2rem + 1.6vw);
+}
+
+header.floating h2 {
+  font-size: calc(1rem + 0.8vw);
+}
+
+header.floating .accent-bar {
+  height: calc(0.5rem + 0.25vw);
 }
 
 @media (max-width: 768px) {
   header.floating .top-nav {
-    top: calc(0.5rem + 0.5vw);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 

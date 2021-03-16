@@ -1,32 +1,6 @@
 /** @namespace app */
 const app = {};
 
-// /** open hamburger menu on focus of nav element */
-// app.toggleHamburger = () => {
-// 	const hamburger = document.querySelector('#hamburger');
-// 	const label = document.querySelector('label[for="hamburger"] i');
-// 	const nav = document.querySelector('.top-nav ul');
-
-// 	nav.addEventListener('focusin', () => {
-// 		hamburger.checked = true;
-// 		toggle();
-// 	})
-
-// 	hamburger.addEventListener('change', () => {
-// 		toggle();
-// 	})
-
-// 	const toggle = () => {
-// 		if (hamburger.checked) {
-// 			label.classList.remove('fa-bars');
-// 			label.classList.add('fa-times');
-// 		} else {
-// 			label.classList.add('fa-bars');
-// 			label.classList.remove('fa-times');
-// 		}
-// 	}
-// }
-
 /**
  * Listen for click on hamburger button and toggle nav
 */
@@ -37,15 +11,24 @@ app.toggleDropdown = function () {
 	/** @type {object} the nav menu to be toggled */
 	const navUl = document.querySelector('.top-nav ul');
 
+	const header = document.querySelector('header');
+
+
 	// toggle dropdown on button click
-	button.addEventListener('click', function () {
+	button.addEventListener('click', function() {
 		// if currently hidden
 		if (navUl.classList.contains('hidden')) {
 			show(this);
-
 			// if not hidden
 		} else {
 			hide(this);
+		}
+	});
+
+	// close dropdown on link click
+	navUl.addEventListener('click', function(e) {
+		if (e.target.nodeName === 'A') {
+			hide(button);
 		}
 	});
 
@@ -56,6 +39,9 @@ app.toggleDropdown = function () {
 
 		// display down arrow
 		element.innerHTML = '<i class="fas fa-times"></i>';
+
+		header.classList.add('floating');
+		navUl.classList.add('floating');
 	};
 
 	/** Hide the dropdown */
@@ -65,6 +51,11 @@ app.toggleDropdown = function () {
 		// display up arrow
 		element.innerHTML = '<i class="fas fa-bars"></i>';
 
+		// if scrolled up, remove floating class from header
+		if (window.scrollY < 5) {
+			header.classList.remove('floating');
+			navUl.classList.remove('floating');
+		}
 	};
 };
 
@@ -73,12 +64,14 @@ app.handleScroll = () => {
 	const header = document.querySelector('header');
 	const navUl = document.querySelector('.top-nav ul');
 
-	if (window.scrollY > 1) {
+	if (window.scrollY > 5) {
 		header.classList.add('floating');
 		navUl.classList.add('floating');
 	} else {
-		header.classList.remove('floating');
-		navUl.classList.remove('floating');
+		if (navUl.classList.contains('hidden')) {
+			header.classList.remove('floating');
+			navUl.classList.remove('floating');
+		}
 	}
 }
 
