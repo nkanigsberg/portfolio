@@ -1122,7 +1122,6 @@ button:hover, button:focus {
 .copyright {
   color: white;
   text-align: center;
-  height: calc(1.5rem + 1.5vw);
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1133,12 +1132,14 @@ button:hover, button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: calc(1rem + 0.2vw);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-@media (max-width: 480px) {
-  .copyright {
-    height: 4.5rem;
-  }
+.copyright p {
+  padding: calc(0.2rem + 0.1vw) 0;
 }
 
 .float-label {
