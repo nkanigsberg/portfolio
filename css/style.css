@@ -391,6 +391,16 @@ h3 {
   text-align: center;
 }
 
+.link {
+  text-decoration: underline;
+  -webkit-transition: 0.1s color;
+  transition: 0.1s color;
+}
+
+.link:hover, .link:focus {
+  color: #C2331A;
+}
+
 @font-face {
   font-family: 'fontello';
   src: url("../../assets/fontello.woff?71294647") format("woff");
@@ -612,14 +622,21 @@ header .top-nav a {
   }
 }
 
-header .top-nav a:hover::after, header .top-nav a:focus::after {
+header .top-nav a::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  width: 0px;
   height: calc(0.3rem + 0.2vw);
   background-color: #C2331A;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+}
+
+header .top-nav a:hover::after, header .top-nav a:focus::after {
+  left: 0;
+  width: 100%;
 }
 
 header.floating {
@@ -1045,22 +1062,7 @@ header.floating .accent-bar {
   grid-column: 2 / 4;
 }
 
-.contact-info a {
-  -webkit-transition: 0.1s color;
-  transition: 0.1s color;
-  text-decoration: underline;
-}
-
-.contact-info a:hover, .contact-info a:focus {
-  color: #C2331A;
-}
-
 .contact-info p {
-  padding-bottom: calc(0.5rem + 0.5vw);
-}
-
-.contact-info a {
-  display: inline-block;
   padding-bottom: calc(0.5rem + 0.5vw);
 }
 
@@ -1083,6 +1085,7 @@ header.floating .accent-bar {
 
 .socials {
   font-size: calc(1.5rem + 1.5vw);
+  margin-top: calc(0.8rem + 0.8vw);
 }
 
 .socials ul {

@@ -62,24 +62,14 @@
 	}
 
 	&-info {
-		a {
-			transition: 0.1s color;
-			text-decoration: underline;
-
-			&:hover,
-			&:focus {
-				color: $primaryAccent;
-			}
-		}
-
 		p {
 			padding-bottom: calc(0.5rem + 0.5vw);
 		}
 
-		a {
-			display: inline-block;
-			padding-bottom: calc(0.5rem + 0.5vw);
-		}
+		// a {
+		// 	display: inline-block;
+		// 	padding-bottom: calc(0.5rem + 0.5vw);
+		// }
 	}
 
 	@include breakpoint('medium') {
@@ -100,6 +90,8 @@
 
 .socials {
 	font-size: calc(1.5rem + 1.5vw);
+
+	margin-top: calc(0.8rem + 0.8vw);
 
 	ul {
 		display: flex;

@@ -35,3 +35,14 @@ section {
 h3 {
 	text-align: center;
 }
+
+.link {
+	text-decoration: underline;
+
+	transition: 0.1s color;
+
+	&:hover,
+	&:focus {
+		color: $primaryAccent;
+	}
+}
