@@ -133,18 +133,25 @@ header {
 				font-size: calc(1.6rem + 0.8vw);
 			}
 
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+
+				width: 0px;
+				height: calc(0.3rem + 0.2vw);
+
+				background-color: $primaryAccent;
+
+				transition: 0.25s all;
+			}
+
 			&:hover,
 			&:focus {
 				&::after {
-					content: '';
-					position: absolute;
-					bottom: 0;
 					left: 0;
-	
 					width: 100%;
-					height: calc(0.3rem + 0.2vw);
-	
-					background-color: $primaryAccent;
 				}
 			}
 		}
