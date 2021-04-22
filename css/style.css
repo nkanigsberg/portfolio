@@ -760,13 +760,8 @@ header.floating .accent-bar {
 }
 
 #skills-section {
-  padding-top: 0;
-}
-
-@media (max-width: 768px) {
-  #skills-section {
-    padding-top: 10rem;
-  }
+  padding-top: 15rem;
+  margin-top: -10rem;
 }
 
 .skills {
